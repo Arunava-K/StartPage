@@ -15,6 +15,7 @@ import {
   SiPortainer,
   SiVsco,
   SiZalando,
+  SiJellyfin,
 } from "react-icons/si";
 import { AiFillCloud, AiOutlineRead, AiOutlineYoutube } from "react-icons/ai";
 import { BiRss } from "react-icons/bi";
@@ -167,14 +168,14 @@ export default function Bookmarks(): JSX.Element {
 
   const homelabLinks = [
     {
-      href: "http://192.168.1.3:3000/",
+      href: "http://192.168.31.89:7575/",
       icon: <TbServer className="hidden md:block" size={20} />,
-      text: "dashboard",
+      text: "Main-Dashboard",
     },
     {
-      href: "http://192.168.1.3:9000/",
-      icon: <SiPortainer className="hidden md:block" size={20} />,
-      text: "portainer",
+      href: "http://192.168.31.32:8096/",
+      icon: <SiJellyfin className="hidden md:block" size={20} />,
+      text: "Jellyfin",
     },
     {
       href: "http://192.168.1.3:3002/",
