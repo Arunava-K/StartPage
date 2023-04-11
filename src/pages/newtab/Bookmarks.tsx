@@ -10,31 +10,43 @@ import {
   SiGrafana,
   SiHelm,
   SiKubernetes,
-  SiNetflix,
+  SiSpotify,
   SiOpenai,
-  SiPortainer,
-  SiVsco,
   SiZalando,
   SiJellyfin,
+  SiProbot,
+  SiFlipkart,
+  SiServerless,
+  SiPlex,
+  SiUptimekuma,
+  SiGithub,
+  SiReplit,
+  SiProtonmail,
+  SiBitwarden,
 } from "react-icons/si";
-import { AiFillCloud, AiOutlineRead, AiOutlineYoutube } from "react-icons/ai";
-import { BiRss } from "react-icons/bi";
+import { AiFillCloud, AiOutlineRead, AiOutlineYoutube , AiOutlineAmazon, AiFillMediumSquare, AiOutlineGithub} from "react-icons/ai";
+import { BiBookmark, BiRss } from "react-icons/bi";
 import { BsTwitch } from "react-icons/bs";
 import { TbBrandGmail, TbCurrencyBitcoin, TbServer } from "react-icons/tb";
-import { GiClothes, GiComputerFan } from "react-icons/gi";
+import { GiClothes, GiComputerFan, GiFireWave } from "react-icons/gi";
 import { IoLogoReddit } from "react-icons/io";
-import { RiVisaFill } from "react-icons/ri";
+import { RiOpenSourceLine, RiVisaFill } from "react-icons/ri";
 import { RxClipboardCopy } from "react-icons/rx";
 
 export default function Bookmarks(): JSX.Element {
   const socialLinks = [
+    {
+      href: "https://github.com/Arunava-K",
+      icon: <SlSocialGithub className="hidden md:block" size={20} />,
+      text: "github",
+    },
     {
       href: "https://www.instagram.com/",
       icon: <SlSocialInstagram className="hidden md:block" size={20} />,
       text: "instagram",
     },
     {
-      href: "https://www.twitter.com/",
+      href: "https://twitter.com/home",
       icon: <SlSocialTwitter className="hidden md:block" size={20} />,
       text: "twitter",
     },
@@ -43,113 +55,82 @@ export default function Bookmarks(): JSX.Element {
       icon: <SlSocialReddit className="hidden md:block" size={20} />,
       text: "reddit",
     },
-    {
-      href: "https://www.vsco.co/",
-      icon: <SiVsco className="hidden md:block" size={20} />,
-      text: "vsco",
-    },
   ];
 
   const newsLinks = [
     {
-      href: "http://192.168.1.3:3020/unread",
-      icon: <BiRss className="hidden md:block" size={20} />,
-      text: "miniflux",
-    },
-    {
-      href: "https://korben.info/",
-      icon: <AiOutlineRead className="hidden md:block" size={20} />,
-      text: "korben",
-    },
-    {
       href: "https://noted.lol/",
-      icon: <AiOutlineRead className="hidden md:block" size={20} />,
-      text: "noted",
+      icon: <SiServerless className="hidden md:block" size={20} />,
+      text: "Noted",
     },
     {
-      href: "https://www.xda-developers.com/",
-      icon: <AiOutlineRead className="hidden md:block" size={20} />,
-      text: "XDA-developers",
-    },
-    {
-      href: "https://www.frandroid.com/",
-      icon: <AiOutlineRead className="hidden md:block" size={20} />,
-      text: "frandroid",
-    },
-    {
-      href: "https://sneakernews.com/",
-      icon: <AiOutlineRead className="hidden md:block" size={20} />,
-      text: "sneakers news",
-    },
+      href: "https://medium.com",
+      icon: <AiFillMediumSquare className="hidden md:block" size={20} />,
+      text: "Medium",
+    }
   ];
 
   const mediaLinks = [
     {
       href: "https://www.youtube.com/",
       icon: <AiOutlineYoutube className="hidden md:block" size={20} />,
-      text: "youtube",
+      text: "Youtube",
     },
     {
       href: "https://www.soundcloud.com/",
       icon: <SlSocialSoundcloud className="hidden md:block" size={20} />,
-      text: "soundcloud",
+      text: "Soundcloud",
     },
-
     {
-      href: "https://netflix.com/",
-      icon: <SiNetflix className="hidden md:block" size={20} />,
-      text: "netflix",
+      href: "https://open.spotify.com/",
+      icon: <SiSpotify className="hidden md:block" size={20} />,
+      text: "Spotify",
     },
     {
       href: "https://www.twitch.com/",
       icon: <BsTwitch className="hidden md:block" size={20} />,
-      text: "twitch",
+      text: "Twitch",
     },
   ];
 
   const productivityLinks = [
     {
-      href: "https://app.raindrop.io/",
-      icon: <AiFillCloud className="hidden md:block" size={20} />,
-      text: "raindrop",
-    },
-    {
-      href: "https://github.com/",
-      icon: <SlSocialGithub className="hidden md:block" size={20} />,
-      text: "github",
+      href: "https://replit.com/~",
+      icon: <SiReplit className="hidden md:block" size={20} />,
+      text: "Replit",
     },
     {
       href: "https://gmail.com/",
       icon: <TbBrandGmail className="hidden md:block" size={20} />,
-      text: "gmail",
+      text: "Gmail",
+    },
+    {
+      href: "https://mail.proton.me/u/0/",
+      icon: <SiProtonmail className="hidden md:block" size={20} />,
+      text: "Proton-Mail",
     },
     {
       href: "https://chat.openai.com/",
       icon: <SiOpenai className="hidden md:block" size={20} />,
       text: "chatgpt",
-    },
+    },    
   ];
 
   const shopLinks = [
     {
-      href: "https://www.digitec.ch/",
-      icon: <GiComputerFan className="hidden md:block" size={20} />,
-      text: "digitec",
+      href: "https://www.amazon.in/",
+      icon: <AiOutlineAmazon className="hidden md:block" size={20} />,
+      text: "Amazon",
     },
     {
-      href: "https://www.microspot.ch/fr",
-      icon: <GiComputerFan className="hidden md:block" size={20} />,
-      text: "microspot",
+      href: "https://www.robu.in",
+      icon: <SiProbot className="hidden md:block" size={20} />,
+      text: "Robu",
     },
     {
-      href: "https://www.asos.com/",
-      icon: <GiClothes className="hidden md:block" size={20} />,
-      text: "asos",
-    },
-    {
-      href: "https://github.com/",
-      icon: <SiZalando className="hidden md:block" size={20} />,
-      text: "zalando lounge",
+      href: "https://www.flipkart.com/",
+      icon: <SiFlipkart className="hidden md:block" size={20} />,
+      text: "Flipkart",
     },
   ];
 
@@ -157,12 +138,17 @@ export default function Bookmarks(): JSX.Element {
     {
       href: "https://www.reddit.com/r/homelab/",
       icon: <IoLogoReddit className="hidden md:block" size={20} />,
-      text: "r/homelab",
+      text: "r/HomeLab",
     },
     {
       href: "https://www.reddit.com/r/selfhosted/",
       icon: <IoLogoReddit className="hidden md:block" size={20} />,
-      text: "r/selfhosted",
+      text: "r/SelfHosted",
+    },    
+    {
+      href: "https://www.reddit.com/r/gachagaming/",
+      icon: <IoLogoReddit className="hidden md:block" size={20} />,
+      text: "r/GachaGaming",
     },
   ];
 
@@ -178,45 +164,50 @@ export default function Bookmarks(): JSX.Element {
       text: "Jellyfin",
     },
     {
-      href: "http://192.168.1.3:3002/",
-      icon: <SiGrafana className="hidden md:block" size={20} />,
-      text: "grafana",
+      href: "http://192.168.31.32:32400/",
+      icon: <SiPlex className="hidden md:block" size={20} />,
+      text: "Plex",
     },
     {
-      href: "http://192.168.1.3:8080/",
-      icon: <SlMagnet className="hidden md:block" size={20} />,
-      text: "qbitorrent",
+      href: "http://192.168.31.89:3001/",
+      icon: <SiUptimekuma className="hidden md:block" size={20} />,
+      text: "UptimeKuma",
     },
   ];
 
   const otherLinks = [
     {
-      href: "https://one.viseca.ch/login/",
-      icon: <RiVisaFill className="hidden md:block" size={20} />,
-      text: "viseca",
+      href: "https://linkding.arunavahomelab.xyz/",
+      icon: <BiBookmark className="hidden md:block" size={20} />,
+      text: "Linkding",
     },
     {
-      href: "https://www.coinbase.com/fr",
-      icon: <TbCurrencyBitcoin className="hidden md:block" size={20} />,
-      text: "coinbase",
+      href: "https://fireshare.arunavahomelab.xyz/",
+      icon: <GiFireWave className="hidden md:block" size={20} />,
+      text: "Fireshare",
+    },
+    {
+      href: "https://vaultwarden.arunavahomelab.xyz/",
+      icon: <SiBitwarden className="hidden md:block" size={20} />,
+      text: "VaultWarden",
     },
   ];
 
   const shortcutsLinks = [
     {
-      href: "https://carbon.now.sh/",
-      icon: <RxClipboardCopy className="hidden md:block" size={20} />,
-      text: "carbon",
+      href: "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      icon: <AiOutlineGithub className="hidden md:block" size={20} />,
+      text: "Awesome-SelfHosted",
     },
     {
-      href: "https://kubernetes.io/docs/reference/kubectl/cheatsheet/",
-      icon: <SiKubernetes className="hidden md:block" size={20} />,
-      text: "kubectl cheat sheet",
+      href: "https://github.com/awesome-foss/awesome-sysadmin",
+      icon: <AiOutlineGithub className="hidden md:block" size={20} />,
+      text: "Awesome-SysAdmin",
     },
     {
-      href: "https://helm.sh/docs/helm/",
-      icon: <SiHelm className="hidden md:block" size={20} />,
-      text: "helm doc",
+      href: "https://awesomeopensource.com/",
+      icon: <RiOpenSourceLine className="hidden md:block" size={20} />,
+      text: "Awesome-Open-Source",
     },
   ];
   const renderLinks = (

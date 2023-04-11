@@ -22,12 +22,12 @@ const Newtab = () => {
         <div className="hidden md:block row-span-2">
           <FadeIn
             from="left"
-            positionOffset={200}
+            positionOffset={50}
             triggerOffset={100}
             delayInMilliseconds={20}
           >
             <img
-              className="object-scale-dow h-100 w-80 rounded-md"
+              className="object-scale-dow h-250 w-175 rounded-md"
               src={gif}
               alt="gif animation"
             />
