@@ -23,6 +23,7 @@ import {
   SiReplit,
   SiProtonmail,
   SiBitwarden,
+  SiPortainer,
 } from "react-icons/si";
 import { AiFillCloud, AiOutlineRead, AiOutlineYoutube , AiOutlineAmazon, AiFillMediumSquare, AiOutlineGithub} from "react-icons/ai";
 import { BiBookmark, BiRss } from "react-icons/bi";
@@ -164,9 +165,9 @@ export default function Bookmarks(): JSX.Element {
       text: "Jellyfin",
     },
     {
-      href: "http://192.168.31.32:32400/",
-      icon: <SiPlex className="hidden md:block" size={20} />,
-      text: "Plex",
+      href: "https://192.168.31.32:9443/",
+      icon: <SiPortainer className="hidden md:block" size={20} />,
+      text: "Portainer",
     },
     {
       href: "http://192.168.31.89:3001/",
